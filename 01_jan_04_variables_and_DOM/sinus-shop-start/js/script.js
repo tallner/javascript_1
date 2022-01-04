@@ -60,3 +60,54 @@ adress.innerHTML = "Sinus skateboards <br> Fasanvägen 14 <br> 247 47, Flyinge";
 const btns = document.querySelectorAll('button');
 console.log(btns);
 btns.forEach(button => button.innerText = "Add to cart");
+
+/*
+-Ändra CSS-stil-
+
+1. Byt bakgrundsfärg på en knapp.
+2. Byt bakgrundsfärg på 1 av produkterna.
+3. Byt text-färg på samtliga <p>.
+4. Lägg till klassen active på menyalternativet home.
+5. Ta bort klassen logo på logotypen.
+6. Ändra bredden på alla img i articles till 50%
+*/
+
+//Uppgift 1
+
+//Uppgift 2
+
+//Uppgift 3
+
+//Uppgift 4
+
+//Uppgift 5
+
+//Uppgift 6
+
+
+/*
+-Lägg till / ta bort element-
+
+1. Lägg till ett nytt menyalternativ.
+2. Ta bort Contact i menyn
+3. Lägg till en article i main
+4. Ta bort alla länkar till sociala medier. Alltså alla a-element som länkar till sociala medier. 
+5. Lägg till en andra knapp i varje product card article.
+6. Kan du lyckas du med denna? Lägg till en ny produkt med följande info.
+img - hoodie-forest.png
+h2 - Sinus Hoodie
+h3 - forest
+p - Den nya produkten
+*/
+
+//Uppgift 1
+
+//Uppgift 2
+
+//Uppgift 3
+
+//Uppgift 4
+
+//Uppgift 5
+
+//Uppgift 6
