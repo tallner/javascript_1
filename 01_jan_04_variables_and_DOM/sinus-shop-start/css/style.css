@@ -108,7 +108,7 @@ main article p {
 main article button {
   appearance: none;
   border: none;
-  background: #222;
+  background: rgb(31, 153, 153);
   color: #eee;
   margin: auto auto 2rem auto;
   padding: 1rem 1.5rem;

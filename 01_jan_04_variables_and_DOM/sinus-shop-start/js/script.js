@@ -12,7 +12,7 @@ a.href = 'https://www.svtplay.se';
 //a.setAttribute('href', 'https://www.svtplay.se');
 
 //remove button
-const btn = document.querySelector('button');
+//const btn = document.querySelector('button');
 //btn.remove();
 
 // get h3
@@ -73,16 +73,29 @@ btns.forEach(button => button.innerText = "Add to cart");
 */
 
 //Uppgift 1
+const btn = document.querySelector('button');
+console.log(btn);
+btn.style.background = 'yellow';
 
 //Uppgift 2
+const water = document.querySelector(".art-3 > figure");
+water.style.background = "red";
+console.log(water);
 
 //Uppgift 3
+const p = document.querySelectorAll('p');
+p.forEach(p => p.style.color='red');
 
 //Uppgift 4
+home_btn.classList.add('active');
 
 //Uppgift 5
+const logo = document.querySelector('header > img');
+logo.classList.remove('logo');
 
 //Uppgift 6
+const widthImg = document.querySelectorAll('img');
+widthImg.forEach(bild => bild.style.width='50%');
 
 
 /*
