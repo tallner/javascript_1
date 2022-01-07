@@ -1,4 +1,8 @@
 
+/**/
+
+
+
 //get all H2 elements
 const allH2 = document.querySelectorAll('h2');
 console.log(allH2);
@@ -114,13 +118,56 @@ p - Den nya produkten
 */
 
 //Uppgift 1
+const addMenu = document.querySelector('#header-navigation');
+const atest = document.createElement('a');
+atest.href='test';
+atest.innerText='test';
+//addMenu.appendChild(atest);
+addMenu.insertBefore(atest, addMenu.children[1]);
 
 //Uppgift 2
+const removeMenu = document.querySelectorAll('#header-navigation > a');
+removeMenu.item(3).remove();
+console.log(removeMenu.item(3));
 
 //Uppgift 3
+const getArt = document.querySelectorAll('main > article');
+const addArt = document.querySelector('main');
+const clonedNode = getArt.item(0).cloneNode(true);
+addArt.appendChild(clonedNode);
+clonedNode.className = 'newArt';
+console.log(clonedNode);
+console.log(addArt);
 
 //Uppgift 4
+const removeSocial = document.querySelectorAll('article');
+const socialItem = removeSocial.item(6);
+//socialItem.removeChild(0);
+socialItem.children[1].remove();
+socialItem.children[1].remove();
+socialItem.children[1].remove();
+console.log(socialItem);
 
 //Uppgift 5
+const addBtn = document.querySelectorAll('main > article');
+var but = document.createElement("button");
+but.innerText = 'hej';
+//addBtn[0].appendChild(but);
+//addBtn[1].append(but);
+//addBtn[2].append(but.cloneNode(true));
+//addBtn[3].appendChild(but);
+
+addBtn.forEach(mainArticle => mainArticle.appendChild(but.cloneNode(true)));
+console.log(addBtn.length);
 
 //Uppgift 6
+const changeArt = document.querySelector('.newArt');
+const changeImg = changeArt.children.item(0).children.item(0);
+const changeH3 = changeArt.children.item(2);
+changeH3.innerText = 'forest';
+
+changeImg.setAttribute('src','img/hoodie-forest.png');
+//changeH3.setAttribute('h3','img/hoodie-forest.png');
+
+console.log(changeH3);
+//console.log(changeImg.attributes[0].value);
