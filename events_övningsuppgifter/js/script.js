@@ -27,3 +27,17 @@ b.addEventListener('click',function(e){
     document.body.style.backgroundColor = `hsl(220,${100*e.clientY/b.scrollHeight}%,76%)`;
     console.log(100*e.clientY/b.scrollHeight);
 });
+
+//Handlingslista
+//1 
+//En text input och en knapp.
+//Varje gång du fyller i text-inputen och klickar på knappen läggs input-innehållet till en lista nedanför.
+
+//2
+//Varannan punkt som läggs till på listan ska få en bakgrundsfärg
+
+//3
+//Om du klickar på en punkt i listan ska det elementet tas bort. Kolla Agendan och övningsuppgifterna från DOM om du inte kommer ihåg hur man gör!
+
+//Functions
+//Använd funktionerna från tidigare övningsuppgifter. Anropa en funktion när användaren har klickat på en knapp. Användaren bestämmer vilka argument som skickas till dem genom text-inputs. Tips: Dessa funktioner behöver alltså anropas inifrån callback-funktionen i event-listernen. 
