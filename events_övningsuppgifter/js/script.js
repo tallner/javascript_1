@@ -14,10 +14,12 @@
 //Ändra hue på bodyns bakgrundsfärg när användaren klickar i bodyn. 
 //Bestäm hue med hjälp av x-position av musen. Alltså event.clientX.
 const b = document.querySelector('body');
-b.addEventListener('mousemove',function(e){
+b.addEventListener('mousemove',setColor);
+
+function setColor(e){
     //console.log(e);
     document.body.style.backgroundColor = `hsl(${e.clientX},76%,76%)`;
-});
+};
 
 //3 
 //Ändra saturation på bodyns bakgrundsfärg när användaren klickar i bodyn. Bestam saturation med hjälp av musens y-position.
@@ -37,7 +39,9 @@ const ol = document.createElement('ol');
 
 b.appendChild(ol);
 
-input.addEventListener('keypress', function(e){
+input.addEventListener('keypress', pressEnter);
+
+function pressEnter(e){
     if(e.key === 'Enter'){
         const li = document.createElement('li');
         li.innerText = input.value;
@@ -53,8 +57,19 @@ input.addEventListener('keypress', function(e){
         ol.appendChild(li);
         input.value = '';
     }
-});
+    console.log('funcrun');
+};
 
 
 //Functions
-//Använd funktionerna från tidigare övningsuppgifter. Anropa en funktion när användaren har klickat på en knapp. Användaren bestämmer vilka argument som skickas till dem genom text-inputs. Tips: Dessa funktioner behöver alltså anropas inifrån callback-funktionen i event-listernen. 
+// Använd funktionerna från tidigare övningsuppgifter.
+// Anropa en funktion när användaren har klickat på en knapp
+// Användaren bestämmer vilka argument som skickas till dem genom text-inputs.
+// Tips: Dessa funktioner behöver alltså anropas inifrån callback-funktionen i event-listernen.
+const btn = document.querySelector('button');
+btn.addEventListener('click',tryck);
+function tryck(e){
+    btn.innerText = 'hej';
+    setColor(e);
+    pressEnter(e);
+}
